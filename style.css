@@ -1,0 +1,284 @@
+body{
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, 
+     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+h1,h2,h3,h4,h5,h6{
+    display: block;
+    font-size: 2em;
+    font-family: "Cookie", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+
+.nav-item a {
+    text-decoration: none;
+    color: #f4f819;
+	margin-inline: 15px;
+	position: relative;
+	top: 5px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+    line-height: 50px;
+}
+.nav-item a:hover{
+  color: rgb(250, 246, 245);
+  text-decoration: none;
+  border-radius: 20px;
+ 
+}
+
+ 
+ 
+
+.get{
+    text-decoration: none;
+    background-color: rgb(24, 150, 45);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+}
+.read{
+    text-decoration: none;
+    background-color: rgb(24, 150, 45);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+}
+
+
+.for h1{
+    color: aliceblue;
+    padding-top: 100px;
+    font-weight: 800;
+    font-size: 45px;
+}
+.for p{
+    color: rgb(205, 219, 231);
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+ 
+
+.map img {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.us strong{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(31, 131, 189);
+}
+.us b{
+    font-size: 30px;
+    font-weight: 700;
+    color: #df3428;
+}
+.line{
+    border-bottom: 1px solid grey;
+    width: 150px;
+}
+.line2{
+    border-bottom: 4px solid rgb(224, 167, 10);
+    width: 80px;
+    position: relative;
+    bottom: 3px;
+}
+.about p{
+    color: rgb(124, 119, 113);
+}
+.about h2{
+    color: rgb(31, 131, 189);
+    font-size: 22px;
+}
+ 
+.box{
+    background-color: aliceblue;
+   
+    border-radius: 20px;
+    position: relative;
+    right: 50px;
+    top: 80px;
+}
+
+
+.hero_area {
+    position: relative;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.waves {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    min-height: 100px;
+    max-height: 150px;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+
+/*Shrinking for mobile*/
+
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+}
+
+
+.text a{
+    text-decoration: none;
+	font-size: 25px;
+	padding-top: 10px;
+    color: orange;
+    font-weight: 550;
+}
+.text p{
+	color: white;
+	font-size: 16px;
+	 
+}
+.solve h3{
+	color: white;
+	font-size: 40px;
+	 
+}
+.solve span{
+   color: orange;
+}
+.img{
+font-size: 40px;
+  }
+  .img:hover{
+      color: white;
+      background-color: black;
+  }
+
+  .side-mage{
+    padding-top: 70px;
+  }
+  
+  .contact h3{
+     color:aliceblue;
+  }
+  .contact p{
+    color: whitesmoke;
+  }
+  .locat i{
+    background-color: rgb(88, 168, 243);
+    padding: 15px 20px;
+    border-radius: 80%;
+    width: 100%;
+    font-size: 25px;
+    color:aliceblue;
+  }
+  .our h3{
+    color: white;
+    font-size: 22px;
+  }
+  .our p{
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .us{
+    line-height: 31px;
+    margin: 8px;
+  }
+  .send{
+      padding: 15px 50px;
+      border-radius: 30px;
+      position: relative;
+      top: 20px;
+      
+  }
+.follow a{
+     font-size: 15px;
+     color: antiquewhite;
+     margin-inline: 5px;
+     background-color: black;
+     padding: 5px;
+     border-radius:5px;
+     align-items: center;
+}
+.follow h4{
+    font-size: 25px;
+    color: orange;
+    font-weight: 400;
+}
+
+.link li{
+    list-style: none;
+}
+
+.link a{
+    text-decoration: none;
+    color:  rgb(7, 39, 107);
+    font-size: 16px;
+    line-height: 50px;
+    position: relative;
+    right: 28px;
+    
+}
+.link h4{
+    color: orange;
+    font-size: 25px;
+    font-weight: 400;
+}
